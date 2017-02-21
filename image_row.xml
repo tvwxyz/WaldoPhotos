@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/image_row_thumbnail"
+        android:layout_width="@dimen/thumbnail_size"
+        android:layout_height="@dimen/thumbnail_size"
+        android:layout_gravity="end"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/thumbnail"
+        android:padding="@dimen/table_row_padding"/>
+
+    <TextView
+        android:id="@+id/image_row_exif_data"
+        android:padding="@dimen/table_row_padding"/>
+
+</TableRow>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="waldo.photos.exif.waldophotos.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/network_store_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/network_url_default"/>
+
+            <Button
+                android:id="@+id/network_store_url_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="GetPhotos"
+                android:text="@string/network_url_control_label"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/network_store_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                     android:id="@+id/image_list"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:visibility="gone">
+
+            <TableRow android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_margin="@dimen/table_row_padding"
+                    android:text="@string/thumbnail_header"/>
+
+                <TextView
+                    android:layout_gravity="left"
+                    android:layout_margin="@dimen/table_row_padding"
+                    android:text="@string/exif_header"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
