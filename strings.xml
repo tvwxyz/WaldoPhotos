@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Waldo Photos</string>
+
+    <string name="instructions">Enter a network store URL below and click the Go button to retrieve image EXIF data...</string>
+    <string name="network_url_default">http://s3.amazonaws.com/waldo-recruiting</string>
+    <string name="network_url_control_label">Go</string>
+
+    <string name="error_invalid_url">Please provide a valid network store URL...</string>
+    <string name="error_io_exception">There was a problem connecting to the server. Please try again later...</string>
+    <string name="error_no_data">There is no valid data available from the given URL. Please provide a valid network store URL...</string>
+
+    <string name="thumbnail_header">Thumbnail</string>
+    <string name="exif_header">EXIF Data</string>
+    <string name="thumbnail">[thumbnail]</string>
+    <string name="no_exif_data">[no EXIF data available]</string>
+</resources>
